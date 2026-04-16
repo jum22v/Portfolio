@@ -214,6 +214,62 @@ footer {
   border-top: 1px solid #eaeaea;
 }
 
+.featured-project {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.featured-project h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.featured-desc {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.bi-showcase {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; /* Keeps tops aligned */
+}
+
+.bi-tool {
+  flex: 1;
+  min-width: 0; /* Prevents flex blowouts from Tableau iframe */
+}
+
+.bi-tool h4 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.bi-tool p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.featured-media {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tableau-container {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -227,5 +283,13 @@ footer {
   .about-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .bi-showcase {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .featured-project {
+    padding: 20px;
   }
 }
