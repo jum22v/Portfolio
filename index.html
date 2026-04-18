@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Juan Morales - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
@@ -13,7 +13,7 @@
   <body>
     <nav>
       <div class="nav-container">
-        <h1 class="logo">MyPortfolio</h1>
+        <h1 class="logo">MyPortfolio.</h1>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -27,8 +27,8 @@
       <div class="hero-content">
         <h2>Hi, I'm <span class="highlight">Juan Morales</span></h2>
         <p>
-          A passionate data analyst building amazing dashboards and interpreting
-          numbers.
+          A passionate Data Analyst & Developer building creative, data-driven
+          digital solutions.
         </p>
         <a href="#projects" class="btn">View My Work</a>
       </div>
@@ -37,24 +37,29 @@
     <section id="about" class="about">
       <h2>About Me</h2>
       <div class="about-content">
-        <img src="ProfilePic.jpeg" alt="Profile Picture" class="profile-pic" />
+        <img
+          src="https://via.placeholder.com/250"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
         <div class="about-text">
           <p>
-            I'm a tech and data enthusiast who loves creating functional and
-            visually appealing projects. I specialize in data analysis, using
-            tools like Python, PowerBI, Tableau, Excel, SQL, etc. When I'm not
-            coding, you can find me playing League of Legends (I am diamond
-            peak), learning German, or learning how to play the bass guitar.
+            Hello! I'm a tech enthusiast who loves creating functional, visually
+            appealing, and data-backed projects. I specialize in business
+            intelligence, natural language processing, and web development to
+            turn raw data into actionable insights.
           </p>
           <p>
-            <strong>Skills:</strong> HTML, CSS, JavaScript, React, Python, Git
+            <strong>Skills:</strong> Python, Power BI, Tableau, SQL, Pandas,
+            NLTK, Web Scraping (BeautifulSoup), HTML/CSS, React
           </p>
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects">
-      <h2>My Projects</h2>
+      <h2>Featured Projects</h2>
+
       <div class="featured-project">
         <h3>Dual-Lens Analytics: SaaS Customer Churn</h3>
         <p class="featured-desc">
@@ -80,7 +85,7 @@
             <div class="tableau-container">
               <div
                 class="tableauPlaceholder"
-                id="viz1776355297676"
+                id="viz1776543762270"
                 style="position: relative"
               >
                 <noscript
@@ -115,7 +120,7 @@
                 </object>
               </div>
               <script type="text/javascript">
-                var divElement = document.getElementById("viz1776355297676");
+                var divElement = document.getElementById("viz1776543762270");
                 var vizElement = divElement.getElementsByTagName("object")[0];
                 if (divElement.offsetWidth > 800) {
                   vizElement.style.width = "100%";
@@ -138,33 +143,59 @@
           </div>
         </div>
       </div>
+      <div class="featured-project">
+        <h3>End-to-End NLP: Airline Sentiment Analysis</h3>
+        <p class="featured-desc">
+          Engineered an automated Python pipeline to scrape thousands of
+          customer reviews, process the natural language data, and classify
+          sentiment to uncover drivers of customer satisfaction.
+        </p>
+
+        <div class="bi-showcase">
+          <div class="bi-tool">
+            <h4>Data Pipeline & NLTK Processing</h4>
+            <p>
+              Built a custom web scraper using <strong>BeautifulSoup</strong> to
+              extract Southwest Airlines reviews. Cleaned the text using Regex
+              and lemmatization, then applied
+              <strong>NLTK's VADER</strong> model to score compound sentiment.
+            </p>
+            <img
+              src="barGraph.png"
+              alt="Sentiment Distribution Bar Graph"
+              class="featured-media"
+            />
+          </div>
+
+          <div class="bi-tool">
+            <h4>Sentiment Word Clouds</h4>
+            <p>
+              Visualized the most frequent terminology driving positive vs.
+              negative customer experiences using
+              <strong>Matplotlib</strong> and <strong>Seaborn</strong>.
+            </p>
+            <div class="nlp-images">
+              <img
+                src="wordCloudPositive.png"
+                alt="Positive Reviews Word Cloud"
+                class="featured-media"
+                style="margin-bottom: 15px"
+              />
+              <img
+                src="wordCloudNegative.png"
+                alt="Negative Reviews Word Cloud"
+                class="featured-media"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 style="margin-top: 60px">Other Work</h2>
       <div class="project-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x250" alt="Project 1" />
-          <div class="project-info">
-            <h3>Project Title 1</h3>
-            <p>
-              A brief description of the project. Explain what problem it solves
-              and what technologies you used.
-            </p>
-            <a href="#" class="btn-small">View Project</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x250" alt="Project 2" />
-          <div class="project-info">
-            <h3>Project Title 2</h3>
-            <p>
-              A brief description of the project. Explain what problem it solves
-              and what technologies you used.
-            </p>
-            <a href="#" class="btn-small">View Project</a>
-          </div>
-        </div>
         <div class="project-card">
           <img src="https://via.placeholder.com/400x250" alt="Project 3" />
           <div class="project-info">
-            <h3>Project Title 3</h3>
+            <h3>Additional Project Title</h3>
             <p>
               A brief description of the project. Explain what problem it solves
               and what technologies you used.
@@ -190,7 +221,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+      <p>&copy; 2026 Juan Morales. All rights reserved.</p>
     </footer>
   </body>
 </html>
